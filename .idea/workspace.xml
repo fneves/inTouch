@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="inTouch.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -73,7 +72,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="50" selection-start="984" selection-end="984" vertical-scroll-proportion="0.6235154">
+            <state line="19" column="24" selection-start="515" selection-end="515" vertical-scroll-proportion="0.33847982">
               <folding />
             </state>
           </provider>
@@ -601,7 +600,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="50" selection-start="984" selection-end="984" vertical-scroll-proportion="0.6235154">
+        <state line="19" column="24" selection-start="515" selection-end="515" vertical-scroll-proportion="0.33847982">
           <folding />
         </state>
       </provider>
