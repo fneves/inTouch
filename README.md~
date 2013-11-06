@@ -64,6 +64,18 @@ rails g devise:views
 rails generate devise User
 ```
 
+Run the Migrations
+
+```
+rake db:migrate
+```
+### Try to run the app server
+
+```
+rails s
+```
+
+
 
 
 
