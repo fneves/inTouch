@@ -32,6 +32,12 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'devise'
+gem 'activeadmin', github: 'gregbell/active_admin'
+gem 'haml-rails'
+gem 'bootstrap-generators', '~> 3.0'
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
