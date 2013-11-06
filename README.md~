@@ -22,7 +22,7 @@ rails generate active_admin:install
 rake db:migrate
 ```
 
-Start the server and go to http://localhost:3000/admin
+Start the server and go to [http://localhost:3000/admin](http://localhost:3000/admin)
 
 ```shell
 rails s
@@ -97,7 +97,28 @@ This line should generate a controller name IntouchController with an action ind
 rails s
 ```
 
+###Make authentication work
 
+Lets require authentication in our inTouch controller urls.
+
+Edit your **app/controllers/intouch_controller.rb** and add `before_filter :authenticate_user!` line right after the class definition, so that your class looks like this:
+```ruby
+class IntouchController &lt; ApplicationController
+  before_filter :authenticate_user!
+
+  ...
+```
+Refresh the page on your browser.
+
+Great!!! It works. Go on to admin mode to check the if the user you've just created really exists on the database!
+
+###Ooops...there is nothing there!!
+
+Don't worry, it is easy to solve..you just need to tell active_admin that you want it to manage the **Users** table
+
+```
+rails generate active_admin:resource User
+```
 
 # Step 5 - Lets design our entity model
 
