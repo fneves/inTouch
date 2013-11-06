@@ -63,11 +63,7 @@ rails g devise:views
 ```
 rails generate devise User
 ```
-### Try to run the app server
 
-```
-rails s
-```
 
 
 
