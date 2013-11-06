@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
-    </list>
+    <list default="true" id="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" name="Default" comment="" />
     <ignored path="inTouch.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$USER_HOME$/current_project/atlassian-ide-plugin.xml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383748279345" ignored="false" />
@@ -74,7 +70,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="46" selection-start="820" selection-end="820" vertical-scroll-proportion="0.5166271">
+            <state line="10" column="54" selection-start="236" selection-end="287" vertical-scroll-proportion="0.17814727">
               <folding />
             </state>
           </provider>
@@ -467,7 +463,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="48" y="-4" width="1233" height="1029" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19347319" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6628831" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -487,7 +483,7 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26580226" sideWeight="0.5959137" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33924052" sideWeight="0.67650396" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33924052" sideWeight="0.67650396" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.59137344" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Issues - JIRA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56640184" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.6753689" order="2" side_tool="false" content_ui="combo" />
@@ -602,7 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="46" selection-start="820" selection-end="820" vertical-scroll-proportion="0.5166271">
+        <state line="10" column="54" selection-start="236" selection-end="287" vertical-scroll-proportion="0.17814727">
           <folding />
         </state>
       </provider>

@@ -22,7 +22,7 @@ rails generate active_admin:install
 rake db:migrate
 ```
 
-Start the server and go to http://localhost:3000/admin
+Start the server and go to [http://localhost:3000/admin](http://localhost:3000/admin)
 
 ```shell
 rails s
@@ -79,8 +79,11 @@ What did just happened?? An error?
 
 This is how rails displays it errors, fancy eh?? 
 
-Those are all the routes that we have in our app, on the first column the method that returns the url so that you don't have to hardcode it on your templates, second column is the HTTP verb, third one is the route url...Wait what is that? you have a box to test your url against your routes?? nice goodie hunh? 
-By last you have the controller and action (method in the controller) that each route will map to.
+Those are all the routes that we have in our app.
+- on the first column the method that returns the url so that you don't have to hardcode it on your templates
+- second column is the HTTP verb
+- third one is the route url...Wait what is that? you have a box to test your url against your routes?? nice goodie hunh? 
+- By last you have the controller and action (method in the controller) that each route will map to.
 
 So...given the error message, the url we are trying to access, the controller#action we pointing to, and the fact that actually we haven't added any controller it seems we need to add one...let's do that:
 
