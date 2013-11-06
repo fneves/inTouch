@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-    </list>
+    <list default="true" id="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" name="Default" comment="" />
     <ignored path="inTouch.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$USER_HOME$/current_project/atlassian-ide-plugin.xml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383748279345" ignored="false" />
@@ -72,7 +70,7 @@
       <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="19" column="24" selection-start="515" selection-end="515" vertical-scroll-proportion="0.33847982">
+            <state line="36" column="50" selection-start="999" selection-end="999" vertical-scroll-proportion="0.6413302">
               <folding />
             </state>
           </provider>
@@ -600,7 +598,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="24" selection-start="515" selection-end="515" vertical-scroll-proportion="0.33847982">
+        <state line="36" column="50" selection-start="999" selection-end="999" vertical-scroll-proportion="0.6413302">
           <folding />
         </state>
       </provider>
