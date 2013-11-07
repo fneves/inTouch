@@ -238,6 +238,45 @@ Add `- if user_signed_in?` on the line before `%ul.nav.navbar-nav.navbar-right` 
 
 Refresh... and it is now working. Top Bar is finished!
 
+#### Lets display all the users
+
+We want to list all the users, so we will need to fetch them from the database. Go to the file *app/controllers/intouch_controller.rb* and make the index method be like this:
+
+```ruby
+def index
+    @users = User.all
+end
+```
+
+Now modify the file *app/views/intouch/index.html.haml* to be like this:
+
+```haml
+%h1 Users
+%hr
+%ul.list-unstyled
+  = render partial: "user", collection: @users
+```
+
+Add a partial template *app/views/intouch/_user.html.haml*
+
+```haml
+%li
+  = user.email
+```
+
+If we want to make our method respond with different output formats (as an example JSON), we would just have to change it to be like this:
+
+```ruby
+def index
+    @users = User.all
+    respond_to do |format|
+      format.html  # index.html.haml
+      format.json  { render :json => @users }
+    end
+end
+```
+
+Refresh
 
 # Step 6 - Lets design our entity model
 
