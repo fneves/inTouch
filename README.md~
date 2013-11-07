@@ -276,6 +276,37 @@ def index
 end
 ```
 
+Refresh
+
+#### A cool footer
+
+Edit your application layout **app/views/layouts/application.html.haml** and add a reference to a footer partial right after `= yield`:
+
+```haml
+= render "layouts/footer"
+```
+Create your footer partial **app/views/layouts/_footer.html.haml**:
+
+```haml
+.navbar.navbar-fixed-bottom.navbar-inverse.big-footer
+  .container
+    .row
+      %ul.nav.navbar-nav.pull-right
+        %li        
+          %a{href: "#", style:'text-decoration:none'}
+            %span{style:'font-size:4em'}
+              This is a cool footer
+              %span.glyphicon.glyphicon-thumbs-up
+            
+    .row
+      %ul.nav.navbar-nav
+        %li
+          %a{href: "#", style:'text-decoration:none'}
+            %strong 
+              inTouch
+              %small &copy;
+```
+
 # Step 6 - Lets design our entity model
 
 ### Add the entities to the admin 

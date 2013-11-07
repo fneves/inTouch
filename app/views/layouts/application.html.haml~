@@ -24,6 +24,5 @@
           = msg
       
       = yield
-      
-      = render "layouts/footer"
+
       
