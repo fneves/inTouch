@@ -297,7 +297,6 @@ Create your footer partial **app/views/layouts/_footer.html.haml**:
             %span{style:'font-size:4em'}
               This is a cool footer
               %span.glyphicon.glyphicon-thumbs-up
-            
     .row
       %ul.nav.navbar-nav
         %li
@@ -308,11 +307,131 @@ Create your footer partial **app/views/layouts/_footer.html.haml**:
 ```
 **Refresh the page**
 
+Go into rails console and add more users :
+
+```
+rails console
+User.create!(:email => 'user@example.com', :password => 'password', :password_confirmation => 'password')
+```
+
+**Refresh the page**
+
 # Step 6 - Lets design our entity model
 
+These is what we are going to have
+
+- User
+⋅⋅* Email
+..* First Name
+..* Second Name
+..* Password
+
+- Contact
+..* User
+..* Virtual Address
+..* Contact Type
+
+- Contact Type
+..* descriptor
+
+
+In SQL, belongs to would mean that out entity would reference the owner through a foreign_key.
+In other hand, the **has** concept would be mapped by a foreign key to the other entity pointing to the current one.
+How is it done on *Rails*? Easy...
+
+### We will start by adding the contact type
+
+```ruby
+rails g model ContactType descriptor:string
+```
+
+This will generate a model Class named ContactType, a migration that will create the table on the database,
+and some test files!
+
+Edit the file **app/admin/contact_type.rb** and set allowed parameters that we expect to come from the interface:
+
+```
+controller do
+    def permitted_params
+      params.permit(:contact_type => [:descriptor])
+    end
+end
+```
+
+
+We know that a ContactType will have many contacts that will fall under this category but a ContactType will also belong to contact,
+so we will go into file **app/models/contact_type.rb** and under the class we will declare this relation:
+
+```ruby
+class ContactType < ActiveRecord::Base
+  has_and_belongs_to_many :contacts
+end
+```
+
+We still have to create the many to many association table, but that can only be done after the contact table is created.
+
+### Create the contact table
+
+A contact will belong to a User that will have many contacts. On this case we don't need a many to many relationship.
+It is a simple belongs_to relationship from the Contact to the user.
+Rails generators support this, so lets generate this entity.
+
+```ruby
+rails g model Contact user:references v_address:string
+```
+
+**Contact Entity** is the other side of the many to many relationship with **ContactType**.
+Lets add that to the class on the file **app/models/contact.rb**:
+
+```ruby
+class Contact < ActiveRecord::Base
+  has_and_belongs_to_many :contact_types
+end
+```
+
+Bu we are still missing the association table. This one will have to be created manually.
+Don't worry this won't be hard.
+
+Manually create a migration. The generator will read the name that you pass to it and automatically do some of the work for you.
+So if you name a migration create_contact_contact_types it will create migration with a create instruction for the table
+contact_contact_types. Run the command:
+
+```
+rails g migration create_contact_contact_types
+```
+
+Open the migration file **db/migrate/<timestamp>_create_contact_contact_types.rb**
+Add the belongs_to relationship to the contact and contact_types table, and an index over the table:
+
+```ruby
+create_table :contact_contact_types do |t|
+  t.belongs_to :contact
+  t.belongs_to :contact_type
+end
+add_index :contact_contact_types, [:contact_id, :contact_type_id] , :name => 'contact_contact_type_ix'
+```
+
+Run the migrations
+
+```
+rake db:migrate
+```
 
 
 ### Add the entities to the admin 
+
+Add this entity to be managed by active_admin
+
+```
+rails generate active_admin:resource Contact
+```
+
+And now add this to be managed the admin
+
+```
+rails generate active_admin:resource ContactType
+```
+
 
 # Step 8 - Now that we are happy with all goodies, lets design the real app!
 

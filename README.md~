@@ -306,8 +306,20 @@ Create your footer partial **app/views/layouts/_footer.html.haml**:
               inTouch
               %small &copy;
 ```
+**Refresh the page**
+
+Go into rails console and add more users :
+
+```
+rails console
+User.create!('user@example.com', 'changeme', 'changeme')
+```
+
+Refresh the page
 
 # Step 6 - Lets design our entity model
+
+
 
 ### Add the entities to the admin 
 
