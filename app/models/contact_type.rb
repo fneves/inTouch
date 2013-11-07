@@ -1,3 +1,7 @@
 class ContactType < ActiveRecord::Base
-  has_and_belongs_to_many :contacts
+  has_many :contacts
+
+  def to_s
+    descriptor
+  end
 end

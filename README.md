@@ -348,67 +348,25 @@ rails g model ContactType descriptor:string
 This will generate a model Class named ContactType, a migration that will create the table on the database,
 and some test files!
 
-Edit the file **app/admin/contact_type.rb** and set allowed parameters that we expect to come from the interface:
 
-```
-controller do
-    def permitted_params
-      params.permit(:contact_type => [:descriptor])
-    end
-end
-```
-
-
-We know that a ContactType will have many contacts that will fall under this category but a ContactType will also belong to contact,
+We know that a ContactType will have many contacts that will fall under this category,
 so we will go into file **app/models/contact_type.rb** and under the class we will declare this relation:
 
 ```ruby
 class ContactType < ActiveRecord::Base
-  has_and_belongs_to_many :contacts
+  has_many :contacts
 end
 ```
-
-We still have to create the many to many association table, but that can only be done after the contact table is created.
 
 ### Create the contact table
 
-A contact will belong to a User that will have many contacts. On this case we don't need a many to many relationship.
+A contact will belong to a User that will have many contacts.
 It is a simple belongs_to relationship from the Contact to the user.
+And the contact will also belong_to a ContactType  group.
 Rails generators support this, so lets generate this entity.
 
 ```ruby
-rails g model Contact user:references v_address:string
-```
-
-**Contact Entity** is the other side of the many to many relationship with **ContactType**.
-Lets add that to the class on the file **app/models/contact.rb**:
-
-```ruby
-class Contact < ActiveRecord::Base
-  has_and_belongs_to_many :contact_types
-end
-```
-
-Bu we are still missing the association table. This one will have to be created manually.
-Don't worry this won't be hard.
-
-Manually create a migration. The generator will read the name that you pass to it and automatically do some of the work for you.
-So if you name a migration create_contact_contact_types it will create migration with a create instruction for the table
-contact_contact_types. Run the command:
-
-```
-rails g migration create_contact_contact_types
-```
-
-Open the migration file **db/migrate/<timestamp>_create_contact_contact_types.rb**
-Add the belongs_to relationship to the contact and contact_types table, and an index over the table:
-
-```ruby
-create_table :contact_contact_types do |t|
-  t.belongs_to :contact
-  t.belongs_to :contact_type
-end
-add_index :contact_contact_types, [:contact_id, :contact_type_id] , :name => 'contact_contact_type_ix'
+rails g model Contact user:references contact_type:references v_address:string
 ```
 
 Run the migrations
@@ -417,23 +375,87 @@ Run the migrations
 rake db:migrate
 ```
 
-
 ### Add the entities to the admin 
-
-Add this entity to be managed by active_admin
 
 ```
 rails generate active_admin:resource Contact
-```
-
-And now add this to be managed the admin
-
-```
 rails generate active_admin:resource ContactType
 ```
 
+If you enter the contact page, user dropdown list shows the memory reference for user and for the contact_type... not pretty...
+Fix that by overriding the **to_s** method on User class **app/models/user.rb** and on the ContactType on **app/models/contact_type.rb**:
 
-# Step 8 - Now that we are happy with all goodies, lets design the real app!
+- User
+```
+ def to_s
+    email
+  end
+```
+
+- ContactType
+```
+ def to_s
+   descriptor
+ end
+```
+
+
+If we also try to create a new user, contact, or contact type an error will popup. This is because the admin interface
+does not know which params are safe to use when creating an object. This can be solved by
+
+Edit the file **app/admin/contact_type.rb** and set allowed parameters that we expect to come from the interface:
+
+```
+controller do
+    def permitted_params
+      params.permit(:contact_type => [:descriptor])
+    end
+end
+
+```
+
+Edit the file **app/admin/contact.rb** and set allowed parameters that we expect to come from the interface:
+
+```
+controller do
+    def permitted_params
+      params.permit(:contact => [:user_id, :contact_type_id, :v_address])
+    end
+end
+
+```
+
+
+Edit the file **app/admin/user.rb** to customize and set the allowed parameters that we expect to come from the interface:
+
+
+```
+  form do |f|
+    f.inputs "User Details" do
+      f.input :email
+      f.input :password
+    end
+
+    f.actions
+  end
+
+
+  controller do
+    def permitted_params
+      params.permit(:user => [:email, :password, :password_confirmation])
+    end
+  end
+```
+
+Right now we are able to manage things from the interface... but we actually want the user to be able to input his own contacts.
+
+# Step 8 - Change the user settings account in order for a user to be able to specify his contacts
+
+
+
+
+# Step 8 - Display the contacts of an user alongside with him
+
 
 # Step 9 - Add an image to an user
 
