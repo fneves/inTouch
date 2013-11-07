@@ -120,15 +120,134 @@ Don't worry, it is easy to solve..you just need to tell active_admin that you wa
 rails generate active_admin:resource User
 ```
 
-# Step 5 - Lets design our entity model
+Go back to admin... and yes... there it is... 
 
-# Step 6 - Lets add these to the admin
+# Step 5 - Enough of generated code...let's do something
 
-# Step 7 - Now that we are happy with all goodies, lets design the real app!
+We will create a pretty landing page and list all the known users. Let's do it...
 
-# Step 8 - Add an image to an user
+### We will haml instead of ERB, because... we are lazy and like to code the less possible
 
-# Step 9 - Integrate with facebook
+Replace the file **app/views/layouts/application.html.erb** with one called **app/views/layouts/application.html.haml**
+
+Copy this converted content from erb to haml there:
+
+```haml
+!!!
+%html
+  %head
+    %title InTouch
+    = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
+    = csrf_meta_tags
+  %body
+    %p.notice= notice
+    %p.alert= alert
+    = yield
+```
+
+### Defining the generic layout
+
+- Top Bar
+-- Display the logged in user
+-- Display a link to the logout action
+- Place to display notifications to the user
+- Footer
+
+
+#### Bootstrap helps us having the topbar, so lets install it and add a topbar to the layout
+
+```
+rails generate bootstrap:install -f
+```
+
+The engine that we have just intalled has changed the main layout. It has added a topbar! That does not look bad!
+Lets, change back the title to inTouch, and then change the *Project name* to inTouch.
+
+Let's also delete the navigation links, we are not going to need them:
+
+- Home
+- About
+- Contact
+
+Refresh your webpage, it just looks a little bit better. If you watch closely the recently generated layout, there is a piece of code iterating a flash object, and rendering a box, everytime a new flash message is added to the controller (*devise* uses this remember?)
+
+We will now keep the top bar logic separated from the main layout, so we can isolate its responsability and make it easier to maintain or replace in the future. To do that we will use a rails partial, which is a separate template that we can invoke from the application layout.
+
+- Create a file app/views/layouts/_topbar.html.haml
+- Move this code from the app/views/layouts/application.html.haml to app/views/layouts/_topbar.html.haml ```
+.navbar.navbar-inverse.navbar-fixed-top
+  .container
+    .navbar-header
+      %button.navbar-toggle{:type => "button", :data => {:toggle => "collapse", :target => ".navbar-collapse"} }
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to "inTouch", "#", :class => "navbar-brand"
+```
+
+Refresh the page!
+
+Now lets add the detail of the logged in user to the topbar, on the corner, and a logout link.
+
+On the topbar file, lets add this under the container div
+
+```
+%ul.nav.navbar-nav.navbar-right
+  %li.dropdown
+    %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+      = current_user.email
+      %b.caret
+    %ul.dropdown-menu
+      %li
+        %a{href: "#"} Settings
+      %li
+        %a{href: "#"} Logout
+```
+
+
+Now we need to update those two links to the correct path.
+
+Lets take a look at our routes:
+
+```
+rake routes
+```
+
+The route that allows us to edit a user account is *named* edit_user_registration. Rails generated two helper methods per route, available on all views, *route_name***_path** and *route_name***_url**.
+
+To have a link to the user account we will use one of these methods combining it with the *link_to* method that generates a well formed html link. Replace `%a{href: "#"} Settings` with `= link_to "Settings", edit_user_registration_path`
+
+Refresh the page... and **It works!** 
+
+Do the same for the Logout link..
+
+Refresh the page... and...The rails complains that the HTTP verb GET is not correct...
+Well that is our fault, our route is expecting the DELETE verb, but we are using a simple link to try do destroy our session an logout of the application. We are going to have to use a form...or make use of jquery_ujs.js that will help us do that without many changes to the code.
+
+Check that `//= require jquery_ujs` is on app/assets/javascripts/application.js. If it is not..add it.
+
+Replace your `= link_to "Logout", destroy_user_session_path`  with `= link_to "Logout", destroy_user_session_path , :method => :delete` and it will work.
+
+If you want more details about what jquery_ujs black magic is, go to [https://github.com/rails/jquery-ujs](https://github.com/rails/jquery-ujs)
+
+Refresh the page... and...another problem??
+The message indicates that we are trying to access *current_user*..but wait...we've logged out..there is no *current_user*. We will fix that with a simple if on the view:
+
+Add `- if user_signed_in?` on the line before `%ul.nav.navbar-nav.navbar-right` and make all that `%ul` content under the if (meaning you ident everything two spaces forward)
+
+Refresh... and it is now working. Top Bar is finished!
+
+
+# Step 6 - Lets design our entity model
+
+### Add the entities to the admin 
+
+# Step 8 - Now that we are happy with all goodies, lets design the real app!
+
+# Step 9 - Add an image to an user
+
+# Step 10 - Integrate with facebook
 
 
 
