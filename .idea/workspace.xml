@@ -2,36 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/migrate/20131107145211_create_contact_contact_types.rb" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/migrate/20131107144055_create_contacts.rb" afterPath="$PROJECT_DIR$/db/migrate/20131107144055_create_contacts.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/db/migrate/20131108092550_add_first_name_last_name_to_user.rb" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/registrations/edit.html.haml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/users/registrations/new.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/contact.rb" afterPath="$PROJECT_DIR$/app/admin/contact.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/contact.rb" afterPath="$PROJECT_DIR$/app/models/contact.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/contact_type.rb" afterPath="$PROJECT_DIR$/app/admin/contact_type.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/contact_type.rb" afterPath="$PROJECT_DIR$/app/models/contact_type.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/admin/user.rb" afterPath="$PROJECT_DIR$/app/admin/user.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="$PROJECT_DIR$/app/models/user.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/_topbar.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/_topbar.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/intouch_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/intouch_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="inTouch.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="$USER_HOME$/current_project/atlassian-ide-plugin.xml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383748279345" ignored="false" />
     <file path="/Gemfile" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383749151089" ignored="false" />
-    <file path="/Dummy.txt" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383831252797" ignored="false" />
+    <file path="/Dummy.txt" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383901461189" ignored="false" />
     <file path="/application.html.haml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383814514882" ignored="false" />
     <file path="/_topbar.html.haml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383816776677" ignored="false" />
     <file path="/intouch_controller.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383818184038" ignored="false" />
     <file path="/index.html.haml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383820115787" ignored="false" />
     <file path="/_user.html.haml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383818778322" ignored="false" />
     <file path="/_footer.html.haml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383821070695" ignored="false" />
-    <file path="/README.md" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383843022094" ignored="false" />
+    <file path="/README.md" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383910717000" ignored="false" />
     <file path="/Ruby Console" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383836743906" ignored="false" />
     <file path="/contact_type.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383834886521" ignored="false" />
     <file path="/20131107144055_create_contacts.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383840173386" ignored="false" />
     <file path="/20131107145211_create_contact_contact_types.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383838381294" ignored="false" />
     <file path="/contact.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383839998571" ignored="false" />
     <file path="/user.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383842908094" ignored="false" />
+    <file path="/20131108092550_add_first_name_last_name_to_user.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383903581874" ignored="false" />
+    <file path="/registrations_controller.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383907017416" ignored="false" />
+    <file path="/routes.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383905427294" ignored="false" />
+    <file path="/edit.html.erb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383906224352" ignored="false" />
+    <file path="/new.html.haml" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383907069405" ignored="false" />
+    <file path="/intouch_helper.rb" changelist="7d8c5a2f-fd90-4b39-8542-18cd0e2fa8ca" time="1383909994702" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,83 +98,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/admin/user.rb">
+      <file leaf-file-name="README.md" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="0" selection-start="31" selection-end="280" vertical-scroll-proportion="0.0">
+            <state line="617" column="0" selection-start="17298" selection-end="17298" vertical-scroll-proportion="-28.84">
               <folding />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts_controller.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="453" column="0" selection-start="12805" selection-end="12805" vertical-scroll-proportion="0.44329897">
+            <state line="2" column="46" selection-start="53" selection-end="53" vertical-scroll-proportion="0.035971224">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="intouch_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/intouch_controller.rb">
+      <file leaf-file-name="_topbar.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/_topbar.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="6" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+            <state line="20" column="56" selection-start="729" selection-end="729" vertical-scroll-proportion="-12.5">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="table_for.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/views/components/table_for.rb">
+      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/registrations/new.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="36" selection-start="1754" selection-end="1766" vertical-scroll-proportion="0.0">
+            <state line="18" column="44" selection-start="0" selection-end="597" vertical-scroll-proportion="-11.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="extract_options.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/gems/activesupport-4.0.1/lib/active_support/core_ext/array/extract_options.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="6" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="resource_dsl.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/resource_dsl.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="62" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_presenter.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/page_presenter.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="8" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="page_presenters.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/resource/page_presenters.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="10" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selection_cells.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/batch_actions/views/selection_cells.rb">
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -176,10 +146,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="batch_action_form.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/batch_actions/views/batch_action_form.rb">
+      <file leaf-file-name="edit.html.haml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/users/registrations/edit.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="79" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
+            <state line="38" column="34" selection-start="0" selection-end="1186" vertical-scroll-proportion="-23.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="68" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="helpers.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/gems/devise-3.1.1/lib/devise/controllers/helpers.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="86" column="0" selection-start="3133" selection-end="3160" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="registrations_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="65" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="user.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -203,21 +209,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/intouch_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/intouch/_user.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/intouch/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/_footer.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
-        <option value="$PROJECT_DIR$/db/migrate/20131107135920_create_contact_types.rb" />
-        <option value="$PROJECT_DIR$/app/models/contact_contact_types.rb" />
-        <option value="$PROJECT_DIR$/db/migrate/20131107145211_create_contact_contact_types.rb" />
-        <option value="$PROJECT_DIR$/app/admin/contact_type.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/contact.rb" />
         <option value="$PROJECT_DIR$/app/models/contact_type.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20131107144055_create_contacts.rb" />
         <option value="$PROJECT_DIR$/app/admin/contact.rb" />
         <option value="$PROJECT_DIR$/app/admin/user.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20131108092550_add_first_name_last_name_to_user.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/registrations_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/registrations/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/users/registrations_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/registrations/new.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/users/registrations/edit.html.haml" />
+        <option value="$PROJECT_DIR$/app/helpers/intouch_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/_topbar.html.haml" />
         <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
@@ -230,9 +236,9 @@
     <option name="CUSTOM_FILTER" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="48" />
+    <option name="x" value="1279" />
     <option name="y" value="-4" />
-    <option name="width" value="1233" />
+    <option name="width" value="1282" />
     <option name="height" value="1029" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -269,6 +275,10 @@
               <option name="myItemId" value="inTouch" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -277,6 +287,104 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="haml" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -291,6 +399,138 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layouts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="devise" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="registrations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,10 +552,50 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="users" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="inTouch" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -333,9 +613,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="dynamic.classpath" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="dynamic.classpath" value="false" />
   </component>
   <component name="PyConsoleOptionsProvider">
     <option name="myPythonConsoleState">
@@ -344,6 +625,11 @@
     <option name="myDjangoConsoleState">
       <PyConsoleSettings />
     </option>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/views/users/registrations" />
+    </key>
   </component>
   <component name="RunManager" selected="Rails.Development: inTouch">
     <configuration default="false" name="Rails console: inTouch" type="IrbRunConfigurationType" factoryName="IRB console" temporary="true">
@@ -522,6 +808,13 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Remote" singleton="true">
+      <JSRemoteDebuggerConfigurationSettings>
+        <option name="engineId" />
+        <option name="fileUrl" />
+      </JSRemoteDebuggerConfigurationSettings>
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -713,7 +1006,9 @@
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="RAILS_SERVER_TYPE" VALUE="Default" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="ENVIRONMENT_TYPE" VALUE="development" />
       <RAILS_SERVER_CONFIG_SETTINGS_ID NAME="LAUNCH_JS" VALUE="false" />
+      <RunnerSettings RunnerId="RubyDebugRunner" />
       <RunnerSettings RunnerId="RubyRunner" />
+      <ConfigurationWrapper RunnerId="RubyDebugRunner" />
       <ConfigurationWrapper RunnerId="RubyRunner" />
       <method />
     </configuration>
@@ -761,8 +1056,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="48" y="-4" width="1233" height="1029" extended-state="6" />
-    <editor active="false" />
+    <frame x="1279" y="-4" width="1282" height="1029" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19347319" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Atlassian " active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6628831" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -770,7 +1065,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.74914867" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.45629966" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37116912" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -781,8 +1076,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26580226" sideWeight="0.5959137" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27510548" sideWeight="0.646992" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.35300794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26418152" sideWeight="0.646992" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35300794" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Issues - JIRA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.56640184" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.6753689" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295583" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
@@ -852,7 +1147,15 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="ruby-line">
+          <url>file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/gems/devise-3.1.1/lib/devise/controllers/helpers.rb</url>
+          <line>86</line>
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="1" />
+    </breakpoint-manager>
   </component>
   <component name="atlassian-ide-plugin-workspace">
     <option name="bambooConfiguration">
@@ -888,117 +1191,117 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/helpers/optional_display.rb">
+    <entry file="file://$PROJECT_DIR$/lib/templates/haml/controller/view.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/filters/formtastic_addons.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="13" selection-start="725" selection-end="725" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/filters/dsl.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/active_admin.js.coffee">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/base_controller/menu.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/gems/devise-3.1.1/lib/devise/parameter_sanitizer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="45" selection-start="524" selection-end="524" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/devise/registrations/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/batch_actions/views/batch_action_selector.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/gems/devise-3.1.1/lib/devise/controllers/helpers.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="153" selection-end="174" vertical-scroll-proportion="0.0">
+        <state line="86" column="0" selection-start="3133" selection-end="3160" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/batch_actions/views/batch_action_popover.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="42" selection-start="227" selection-end="247" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/batch_actions/views/batch_action_form.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="79" selection-start="419" selection-end="419" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/batch_actions/views/selection_cells.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/resource/page_presenters.rb">
+    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/gems/devise-3.1.1/app/controllers/devise/registrations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="10" selection-start="557" selection-end="557" vertical-scroll-proportion="0.0">
+        <state line="1" column="64" selection-start="121" selection-end="121" vertical-scroll-proportion="0.038659792">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/page_presenter.rb">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="8" selection-start="432" selection-end="432" vertical-scroll-proportion="0.0">
+        <state line="2" column="68" selection-start="126" selection-end="126" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/resource_dsl.rb">
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="62" selection-start="605" selection-end="605" vertical-scroll-proportion="0.0">
+        <state line="0" column="6" selection-start="6" selection-end="6" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/gems/activesupport-4.0.1/lib/active_support/core_ext/array/extract_options.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users/registrations_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="6" selection-start="679" selection-end="679" vertical-scroll-proportion="0.0">
+        <state line="1" column="65" selection-start="78" selection-end="78" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/.rvm/gems/ruby-2.0.0-p247@intouch/bundler/gems/active_admin-a6f6794c0fba/lib/active_admin/views/components/table_for.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/registrations/new.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="36" selection-start="1754" selection-end="1766" vertical-scroll-proportion="0.0">
+        <state line="18" column="44" selection-start="0" selection-end="597" vertical-scroll-proportion="-11.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/intouch_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/views/users/registrations/edit.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="6" selection-start="91" selection-end="91" vertical-scroll-proportion="0.0">
+        <state line="38" column="34" selection-start="0" selection-end="1186" vertical-scroll-proportion="-23.75">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin/user.rb">
+    <entry file="file://$PROJECT_DIR$/app/helpers/intouch_helper.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="0" selection-start="31" selection-end="280" vertical-scroll-proportion="0.0">
+        <state line="7" column="35" selection-start="99" selection-end="99" vertical-scroll-proportion="0.12589929">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/_topbar.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="56" selection-start="729" selection-end="729" vertical-scroll-proportion="-12.5">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="617" column="0" selection-start="17298" selection-end="17298" vertical-scroll-proportion="-28.84">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/contacts_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="453" column="0" selection-start="12805" selection-end="12805" vertical-scroll-proportion="0.44329897">
+        <state line="2" column="46" selection-start="53" selection-end="53" vertical-scroll-proportion="0.035971224">
           <folding />
         </state>
       </provider>

@@ -449,17 +449,184 @@ Edit the file **app/admin/user.rb** to customize and set the allowed parameters 
 
 Right now we are able to manage things from the interface... but we actually want the user to be able to input his own contacts.
 
-# Step 8 - Change the user settings account in order for a user to be able to specify his contacts
+# Step 8 - Change the user settings account
+
+First we will change what are the fields for the user registration to include the First Name and Last name
+
+#### Create the migration
+```
+rails g migration add_first_name_last_name_to_user
+```
+
+Change the change method of the migration file **db/migrate/<timestamp>_** to include two more fields:
+
+```ruby
+  def change
+    change_table :users do |t|
+      t.string :first_name , null: false
+      t.string :last_name, null: false
+    end
+  end
+```
+
+Run the migrations!
+
+```
+rake db:migrations
+```
+
+No we want to customize the way a registration logic exists to add two more fields.
+Rails4 introduced a concept called strong parameters, that basically means that we whitelist all the fields we are expecting to come from a request.
+We added two more fields, so we need to tell **devise** (the engine we are using to manage our registrations + authentication),
+to trust the **first_name** and **last_name** parameters.
+
+We will extend the Devise Registrations controller to do this. To do that we will first use a rails generator to generate ours.
+
+```
+rails g controller Users::Registrations
+```
+
+If you open the file **app/controllers/registrations_controller.rb** you will notice that it is extending ApplicationController,
+that is the base controller for anything on rails.
+
+Change that to extend the devise one:
+```
+class Users::RegistrationsController < Devise::RegistrationsController
+...
+```
+
+Add a method that will extend devise whitelisted parameters
+
+```ruby
+before_filter :configure_permitted_parameters
+
+
+  protected
+
+  def configure_permitted_parameters
+    devise_parameter_sanitizer.for(:sign_up) << [:first_name, :last_name]
+    devise_parameter_sanitizer.for(:account_update) << [:first_name, :last_name]
+  end
+```
+
+Now we have to tell devise to reference our controller instead of the default one. Open **config/routes.rb**
+
+Replace the line `devise_for :users` with `devise_for :users, :controllers => {:registrations => 'users/registrations'}`
+
+As we replaced the default controller the default views will no longer work. This way we are going to have create two new views:
+
+- **app/views/users/new.html.haml**
+- **app/views/users/edit.html.haml**
+
+Put this content on the first one:
+
+```haml
+%h2 Sign up
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f|
+  = devise_error_messages!
+  %div
+    = f.label :email
+    %br/
+    = f.email_field :email, :autofocus => true
+  %div
+    = f.label :first_name
+    %br/
+    = f.text_field :first_name
+    %div
+      = f.label :last_name
+      %br/
+      = f.text_field :last_name
+  %div
+    = f.label :password
+    %br/
+    = f.password_field :password
+  %div
+    = f.label :password_confirmation
+    %br/
+    = f.password_field :password_confirmation
+
+  %div= f.submit "Sign up"
+= render "devise/shared/links"
+```
+
+Put this content on the second one:
+
+```haml
+%h2
+  Edit #{resource_name.to_s.humanize}
+= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f|
+  = devise_error_messages!
+  %div
+    = f.label :email
+    %br/
+    = f.email_field :email, :autofocus => true
+  %div
+    = f.label :first_name
+    %br/
+    = f.text_field :first_name
+  %div
+    = f.label :last_name
+    %br/
+    = f.text_field :last_name
+
+  - if devise_mapping.confirmable? && resource.pending_reconfirmation?
+    %div
+      Currently waiting confirmation for: #{resource.unconfirmed_email}
+  %div
+    = f.label :password
+    %i (leave blank if you don't want to change it)
+    %br/
+    = f.password_field :password, :autocomplete => "off"
+  %div
+    = f.label :password_confirmation
+    %br/
+    = f.password_field :password_confirmation
+  %div
+    = f.label :current_password
+    %i (we need your current password to confirm your changes)
+    %br/
+    = f.password_field :current_password
+  %div= f.submit "Update"
+%h3 Cancel my account
+%p
+  Unhappy? #{button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete}
+= link_to "Back", :back
+```
+
+Now we will change what we display on the top bar when we are logged in.
+Go into the file **app/helpers/intouch_helper.rb** and create a helper method that will display our full name
+
+```ruby
+  def full_name(user)
+     "#{user.first_name} #{user.last_name}"
+  end
+```
+
+Now open **/app/views/layouts/_topbar.html.haml**
+
+and replace  `= current_user.email` with `full_name(current_user)`
+
+## Creating the manage contacts page
+
+
+Create the contacts controller
+
+```
+rails g controller Contacts
+```
 
 
 
 
-# Step 8 - Display the contacts of an user alongside with him
 
 
-# Step 9 - Add an image to an user
+# Step 9 - Display the contacts of an user alongside with him
 
-# Step 10 - Integrate with facebook
+
+# Step 10 - Add an image to an user
+
+
+# Step 11 - Integrate with facebook
 
 
 

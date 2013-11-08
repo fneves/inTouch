@@ -72,4 +72,17 @@
       <index name="index_users_on_email" unique="true" columns="email"/>
     </table>
   </data-source>
+  <data-source source="LOCAL" name="Rails inTouch: test" product="SQLite" version="3.7.2" jdbc-version="2.1" driver-name="SQLiteJDBC" driver-version="native" uuid="562830c9-4d9f-43a1-a813-9a2cc0608363">
+    <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+    <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/db/test.sqlite3</jdbc-url>
+    <libraries>
+      <library>
+        <url>file://$USER_HOME$/.IntelliJIdea12/config/jdbc-drivers/xerial-sqlite-license.txt</url>
+      </library>
+      <library>
+        <url>file://$USER_HOME$/.IntelliJIdea12/config/jdbc-drivers/sqlite-jdbc-3.7.2.jar</url>
+      </library>
+    </libraries>
+    <schema name="" catalog=""/>
+  </data-source>
 </component>
