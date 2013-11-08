@@ -3,6 +3,7 @@ InTouch::Application.routes.draw do
   devise_for :users, :controllers => {:registrations => 'users/registrations'}
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
+  resources :contacts
   root :to => "intouch#index"
 
 

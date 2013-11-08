@@ -36,6 +36,7 @@ gem 'devise'
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'haml-rails'
 gem 'bootstrap-generators', '~> 3.0'
+gem 'formtastic-bootstrap', github: 'nickl-/formtastic-bootstrap3'
 
 
 # Use ActiveModel has_secure_password

@@ -41,6 +41,7 @@
     <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-2.0.0-p247 [intouch]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.0.2, RVM: ruby-2.0.0-p247 [intouch]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="formtastic (v2.3.0.rc2, RVM: ruby-2.0.0-p247 [intouch]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="formtastic-bootstrap (v2.1.3@95fed6, RVM: ruby-2.0.0-p247 [intouch]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml (v4.0.4, RVM: ruby-2.0.0-p247 [intouch]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="haml-rails (v0.4, RVM: ruby-2.0.0-p247 [intouch]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="has_scope (v0.6.0.rc, RVM: ruby-2.0.0-p247 [intouch]) [gem]" level="application" />

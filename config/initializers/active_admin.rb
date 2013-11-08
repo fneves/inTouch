@@ -231,5 +231,9 @@ ActiveAdmin.setup do |config|
   # You can enable or disable them for all resources here.
   #
   # config.filters = true
+  config.clear_stylesheets!
+  config.register_stylesheet 'admin/active_admin'
 
+  config.clear_javascripts!
+  config.register_javascript 'admin/active_admin'
 end

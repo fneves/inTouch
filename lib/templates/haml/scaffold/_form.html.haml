@@ -1,19 +1,8 @@
-= form_for @<%= singular_table_name %>, :html => { :class => "form-horizontal" } do |f|
-  -if @<%= singular_table_name %>.errors.any?
-    .alert.alert-danger.alert-dismissable
-      %button.close{"aria-hidden" => "true", "data-dismiss" => "alert", :type => "button"} &times;
-      %h4= "#{pluralize(@<%= singular_table_name %>.errors.count, "error")} prohibited this <%= singular_table_name %> from being saved:"
+= semantic_form_for @<%= singular_name %> do |f|
+  = f.inputs do
+  <%- attributes.each do |attribute| -%>
+    = f.input :<%= attribute.name %>
+  <%- end -%>
 
-      %ul
-        - @<%= singular_table_name %>.errors.full_messages.each do |msg|
-          %li= msg
-
-<% for attribute in attributes -%>
-  .form-group
-    = f.label :<%= attribute.name %>, :class => 'col-lg-2 control-label'
-    .col-lg-10
-      = f.<%= attribute.field_type %> :<%= attribute.name %>, :class => 'form-control'
-<% end -%>
-  .form-group
-    .col-lg-offset-2.col-lg-10
-      = f.submit :class => 'btn btn-primary'
+  = f.actions do
+    = f.action :submit, :as => :input

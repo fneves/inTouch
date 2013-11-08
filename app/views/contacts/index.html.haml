@@ -1,0 +1,22 @@
+%h1 Listing Contacts
+.pull-right
+  = link_to 'Add Contact', new_contact_path, class: 'btn btn-primary'
+
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Virtual Address
+      %th ContactType
+      %th
+      %th
+
+  %tbody
+    - @contacts.each do |contact|
+      %tr
+        %td= contact.v_address
+        %td= contact.contact_type
+        %td= link_to 'Edit', edit_contact_path(contact)
+        %td= link_to 'Destroy', contact_path(contact), method: :delete, data: { confirm: 'Are you sure?' }
+
+
